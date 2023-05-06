@@ -21,4 +21,6 @@ manage your monthly income in a good manner. Save more and live happily.</string
     <string name="password2_text">Re-enter password</string>
     <string name="welcome_text">Welcome to influx</string>
     <string name="name_of_user">Hello Alexa!</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

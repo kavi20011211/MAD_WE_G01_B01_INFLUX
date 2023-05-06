@@ -11,7 +11,7 @@ import com.example.influxapp.database.DataBaseHelper
 
 class MainActivity : AppCompatActivity() {
 
-    private lateinit var etUsername:EditText
+    lateinit var etUsername:EditText
     private lateinit var etPassword:EditText
     private lateinit var database:DataBaseHelper
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -40,12 +40,14 @@ class MainActivity : AppCompatActivity() {
 
 
             if(TextUtils.isEmpty(usernameEditText)||TextUtils.isEmpty(passwordEditText)){
+                etUsername.error="Please fill the fields!"
+                etPassword.error="Please fill the fields!"
                 Toast.makeText(this@MainActivity,"Enter your username and password!",Toast.LENGTH_SHORT).show()
             }else {
 
                 if (result == true){
                     Toast.makeText(this@MainActivity, "Successful!", Toast.LENGTH_SHORT).show()
-                    val intent = Intent(this,AchievmentActivity::class.java)
+                    val intent = Intent(this,ConfidentialDataPage::class.java)
                     startActivity(intent)
                     finish()
                 }else {

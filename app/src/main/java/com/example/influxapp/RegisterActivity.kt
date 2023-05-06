@@ -32,10 +32,14 @@ class RegisterActivity : AppCompatActivity() {
             val usernameText = etUsername.text.toString()
             val passwordText = etPassword.text.toString()
             val comPasswordText = etComfirmPassword.text.toString()
+            
 
             val saveData = db.insertUserFunction(usernameText,passwordText,comPasswordText)
 
             if(TextUtils.isEmpty(usernameText)||TextUtils.isEmpty(passwordText)||TextUtils.isEmpty(comPasswordText)){
+                etUsername.error = "Please fill the field!"
+                etPassword.error = "Please fill the fields!"
+                etComfirmPassword.error = "Please fill the fields!"
                 Toast.makeText(this@RegisterActivity,"Enter data to continue!",Toast.LENGTH_SHORT).show()
             }else{
                 if (passwordText.equals(comPasswordText)){

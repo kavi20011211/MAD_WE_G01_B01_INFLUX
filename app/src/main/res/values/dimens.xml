@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="ImgWidth">100dp</dimen>
+    <dimen name="ImgHeight">100dp</dimen>
+    <dimen name="btnWidth">100dp</dimen>
+    <dimen name="btnHeight">48dp</dimen>
+    <dimen name="textviewWidth">180dp</dimen>
+    <dimen name="textviewHeight">30dp</dimen>
+    <dimen name="plaintextWidth">250dp</dimen>
+    <dimen name="plaintextHeight">25dp</dimen>
+    <dimen name="spinnerWidth">200dp</dimen>
+    <dimen name="spinnerHeight">30dp</dimen>
+    <dimen name="dividerWidth">200dp</dimen>
+    <dimen name="dividerHeight">0.5dp</dimen>
+    <dimen name="iconWidth">50dp</dimen>
+    <dimen name="iconHeight">50dp</dimen>
+    <dimen name="smallTxtWidth">100dp</dimen>
+    <dimen name="smallTxtHeight">30dp</dimen>
+</resources>

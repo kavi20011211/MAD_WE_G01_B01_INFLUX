@@ -4,100 +4,256 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/white"
+    android:background="@drawable/ck_jpeg"
     tools:context=".MainActivity">
 
+    <LinearLayout
+        android:id="@+id/Layout01"
+        android:layout_width="409dp"
+        android:layout_height="180dp"
+        android:background="@color/Background_color"
+        android:backgroundTint="#FFFFFF"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_Hello"
+            android:layout_width="165dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginRight="25dp"
+            android:text="@string/Hello"
+            android:textColor="@color/Text"
+            android:textColorHint="@color/Text_Color"
+            android:textSize="20sp" />
+
+        <ImageButton
+            android:id="@+id/imageButton5"
+            android:layout_width="@dimen/iconWidth"
+            android:layout_height="@dimen/iconHeight"
+            android:layout_marginTop="-27dp"
+            android:layout_marginEnd="-50dp"
+            android:layout_marginBottom="-50dp"
+            android:contentDescription="profile"
+            app:srcCompat="@drawable/baseline_account_circle_24" />
+
+        <TextView
+            android:id="@+id/tv_Welcome"
+            android:layout_width="190dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="24dp"
+            android:text="@string/stn_Welcome"
+            android:textColor="@color/Text"
+            android:textSize="20sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="@dimen/ImgWidth"
+            android:layout_height="@dimen/ImgHeight"
+            android:layout_marginLeft="300dp"
+            android:layout_marginTop="-75dp"
+            android:layout_marginRight="45dp"
+            android:contentDescription="Influx_logo"
+            app:srcCompat="@drawable/influx_new" />
+
+        <TextView
+            android:id="@+id/tv_Expenses"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stn_Expenses"
+            android:textAlignment="center"
+            android:textColor="@color/Text"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/tv_ExpenseValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/stn_ExpValue"
+            android:textAlignment="center"
+            android:textColor="@color/Text"
+            android:textSize="20sp" />
+    </LinearLayout>
+
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tv_Catergories"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Login here"
-        android:textColor="@color/Text_Color"
-        android:textFontWeight="900"
-        android:textSize="28dp"
+        android:text="@string/stn_Catergories"
+        android:textColor="@color/Text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintHorizontal_bias="0.045"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
-
-    <EditText
-        android:id="@+id/editTextTextPersonName"
-        android:layout_width="300dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="48dp"
-        android:ems="10"
-        android:hint="Enter username"
-        android:inputType="textPersonName"
-        android:textColor="@color/Text_Color"
-        android:textColorHint="@color/Text_Color"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
-
-    <EditText
-        android:id="@+id/editTextTextPassword"
-        android:layout_width="300dp"
-        android:layout_height="48dp"
-        android:layout_marginTop="16dp"
-        android:ems="10"
-        android:hint="Enter Password"
-        android:inputType="textPassword"
-        android:textColor="@color/Text_Color"
-        android:textColorHint="@color/Text_Color"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+        app:layout_constraintTop_toBottomOf="@+id/Layout01"
+        app:layout_constraintVertical_bias="0.031" />
 
     <Button
-        android:id="@+id/LogBtn"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/btn_Graph"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginStart="108dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/Color3"
+        android:text="@string/btn_Graph"
+        app:layout_constraintStart_toEndOf="@+id/tv_Catergories"
+        app:layout_constraintTop_toBottomOf="@+id/Layout01" />
+
+    <Button
+        android:id="@+id/btn_List"
+        android:layout_width="88dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="@color/Color3"
+        android:text="@string/btn_List"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.777"
+        app:layout_constraintStart_toEndOf="@+id/btn_Graph"
+        app:layout_constraintTop_toBottomOf="@+id/Layout01" />
+
+    <ImageButton
+        android:id="@+id/btn_Shopping"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="50dp"
+        android:contentDescription="Shopping"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/btn_Grocery"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Graph"
+        app:srcCompat="@drawable/shopping" />
+
+    <ImageButton
+        android:id="@+id/btn_Grocery"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="Grocery"
+        android:scaleType="fitCenter"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Catergories"
+        app:srcCompat="@drawable/grocery" />
+
+    <ImageButton
+        android:id="@+id/imageButton12"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="50dp"
         android:layout_marginTop="20dp"
-        android:shadowRadius="12"
-        android:text="Login"
-        android:backgroundTint="@color/Color1"
-        android:textColor="@color/Text_Color"
-        android:textFontWeight="900"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+        android:contentDescription="Medical"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPassword" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_Grocery"
+        app:layout_constraintVertical_bias="0.189"
+        app:srcCompat="@drawable/medi" />
 
-    <Button
-        android:id="@+id/RegisterBtn"
-        android:layout_width="300dp"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
-        android:backgroundTint="@color/Color2"
-        android:shadowRadius="12"
-        android:text="Register"
-        android:textFontWeight="900"
+    <ImageButton
+        android:id="@+id/imageButton13"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:contentDescription="Insurance"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.504"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/LogBtn" />
+        app:layout_constraintHorizontal_bias="0.523"
+        app:layout_constraintStart_toEndOf="@+id/imageButton12"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Shopping"
+        app:layout_constraintVertical_bias="0.178"
+        app:srcCompat="@drawable/insurance" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/tv_Grocery"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
-        android:text="If you are not registered, register from here."
-        android:textColor="@color/Text_Color"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="80dp"
+        android:text="@string/btn_Grocery"
+        android:textAlignment="center"
+        android:textColor="@color/Text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton12"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/RegisterBtn" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_Grocery"
+        app:layout_constraintVertical_bias="0.322" />
 
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="250dp"
-        android:layout_height="250dp"
-        android:layout_marginTop="40dp"
+    <TextView
+        android:id="@+id/tv_Shopping"
+        android:layout_width="@dimen/smallTxtWidth"
+        android:layout_height="@dimen/smallTxtHeight"
+        android:text="@string/btn_Shopping"
+        android:textAlignment="center"
+        android:textColor="@color/Text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/imageButton13"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toEndOf="@+id/tv_Grocery"
+        app:layout_constraintTop_toBottomOf="@+id/btn_Shopping"
+        app:layout_constraintVertical_bias="0.298" />
+
+    <TextView
+        android:id="@+id/tv_Medical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="80dp"
+        android:text="@string/btn_Medical"
+        android:textAlignment="center"
+        android:textColor="@color/Text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/influx2" />
+        app:layout_constraintTop_toBottomOf="@+id/imageButton12"
+        app:layout_constraintVertical_bias="0.188" />
+
+    <TextView
+        android:id="@+id/tv_Insurance"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_Insurance"
+        android:textAlignment="center"
+        android:textColor="@color/Text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.581"
+        app:layout_constraintStart_toEndOf="@+id/tv_Medical"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton13"
+        app:layout_constraintVertical_bias="0.188" />
+
+    <Button
+        android:id="@+id/btn_Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="72dp"
+        android:backgroundTint="@color/Text"
+        android:text="@string/stn_Add"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Medical"
+        app:layout_constraintVertical_bias="0.468" />
+
+    <Button
+        android:id="@+id/btn_Edit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/Text"
+        android:text="@string/stn_btnUpdate"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toEndOf="@+id/btn_Add"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Insurance"
+        app:layout_constraintVertical_bias="0.466" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>

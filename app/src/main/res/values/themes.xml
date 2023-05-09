@@ -1,8 +1,8 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
     <!-- Base application theme. -->
-    <style name="Theme.InfluxApp" parent="Theme.MaterialComponents.NoActionBar">
+    <style name="Theme.InfluxApp" parent="Theme.MaterialComponents.DayNight.NoActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/white</item>
+        <item name="colorPrimary">@color/Color1</item>
         <item name="colorPrimaryVariant">@color/Color1</item>
         <item name="colorOnPrimary">@color/Background_color</item>
         <!-- Secondary brand color. -->

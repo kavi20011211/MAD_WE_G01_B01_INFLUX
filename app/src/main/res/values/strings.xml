@@ -1,24 +1,41 @@
 <resources>
     <string name="app_name">Influx</string>
-    <string name="Faq_description">We built this application for your busy life solution. You are capable of
-manage your monthly income in a good manner. Save more and live happily.</string>
-    <string name="notification">You have spent more than last week.</string>
-    <string name="achievement">You are in a 150,000 saving challenge.</string>
-    <string name="loginbtn">Login</string>
-    <string name="register_btn">Register</string>
-    <string name="backBtn">Back</string>
-    <string name="login_text">Login</string>
-    <string name="register_text">If you are not registered, register here.</string>
-    <string name="setting">Settings</string>
-    <string name="settings_item1">Account</string>
-    <string name="settings_item2">Delete Account</string>
-    <string name="settings_item3">FAQ</string>
-    <string name="achievements_text">Achievements</string>
-    <string name="notification_text">Notification</string>
-    <string name="notification_">You have spent more than last week.</string>
-    <string name="username_text">Enter username</string>
-    <string name="password_text">Enter password</string>
-    <string name="password2_text">Re-enter password</string>
-    <string name="welcome_text">Welcome to influx</string>
-    <string name="name_of_user">Hello Alexa!</string>
+    <string name="Hello">Hello Amanda</string>
+    <string name="stn_Welcome">Welcome to Influx</string>
+    <string name="btn_List">List</string>
+    <string name="btn_Graph">Graph</string>
+    <string name="stn_Expenses">Current Expenses</string>
+    <string name="stn_ExpValue">Rs 15000</string>
+    <string name="stn_Catergories">Catergories</string>
+    <string name="stn_btn_Grocery">Grocery</string>
+    <string name="btn_Grocery">Grocery</string>
+    <string name="btn_Shopping">Shopping</string>
+    <string name="btn_Medical">Medical</string>
+    <string name="btn_Insurance">Insurance</string>
+    <string name="stn_Add">ADD</string>
+    <string name="stn_addCatergory">Select Catergory</string>
+    <string name="stn_AddExpense">Add Expense</string>
+    <string name="stn_SelectCatergory">Select Catergory</string>
+    <string name="stn_EnterExpense">Enter Expense Name</string>
+    <string name="stn_inputName">Expense Name</string>
+    <string name="stn_EnterAmount">Enter Expense Amount</string>
+    <string name="stn_InputAmount">Expense Amount</string>
+    <string name="stn_btnAdd">ADD</string>
+    <string name="stn_gHello">Hello Amanda</string>
+    <string name="stn_WelInflux">Welcome to Influx</string>
+    <string name="stn_gCatergories">Catergories</string>
+    <string name="stn_gGraph">GRAPH</string>
+    <string name="stn_gList">LIST</string>
+    <string name="stn_Details">My Details</string>
+    <string name="stn_btnUpdate">Update</string>
+    <string name="stn_edCat">Select Catergory</string>
+    <string name="stn_selExpense">Select Expense</string>
+    <string name="stn_Updatename">Enter new Expense name</string>
+    <string name="stn_InUpdateName">Enter new name</string>
+    <string name="stn_UpdateAmount">Enter new Amount</string>
+    <string name="stn_InUpdateAmount">Enter new Amount</string>
+    <string name="stn_editUpdate">Update</string>
+    <string name="stn_editDelete">Delete</string>
+
+
 </resources>

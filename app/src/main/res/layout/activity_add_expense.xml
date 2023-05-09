@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ck_jpeg"
+    tools:context=".AddExpense">
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="4dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_Add"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.039"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.705"
+        app:srcCompat="@drawable/baseline_menu_24" />
+
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="-15dp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_Add"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/influx_new" />
+
+    <TextView
+        android:id="@+id/tv_Add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="128dp"
+        android:text="@string/stn_AddExpense"
+        android:textAlignment="center"
+        android:textColor="@color/Text"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/div_Add"
+        app:layout_constraintEnd_toStartOf="@+id/imageView4"
+        app:layout_constraintHorizontal_bias="0.318"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <View
+        android:id="@+id/div_Add"
+        android:layout_width="@dimen/dividerWidth"
+        android:layout_height="@dimen/dividerHeight"
+        android:layout_marginBottom="12dp"
+        android:background="@color/Text"
+        android:backgroundTint="@color/Text"
+        app:layout_constraintBottom_toTopOf="@+id/img_Form"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.526"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/img_Form"
+        android:layout_width="256dp"
+        android:layout_height="423dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:scaleType="center"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.49"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/form" />
+
+    <TextView
+        android:id="@+id/tv_SelectCatergory"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="@string/stn_SelectCatergory"
+        android:textColor="@color/Text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_Form"
+        app:layout_constraintHorizontal_bias="0.33"
+        app:layout_constraintStart_toStartOf="@+id/img_Form"
+        app:layout_constraintTop_toTopOf="@+id/img_Form" />
+
+    <Spinner
+        android:id="@+id/spinner_Catergory"
+        android:layout_width="@dimen/spinnerWidth"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:entries="@array/Catergory_array"
+        app:layout_constraintEnd_toEndOf="@+id/img_Form"
+        app:layout_constraintHorizontal_bias="0.803"
+        app:layout_constraintStart_toStartOf="@+id/img_Form"
+        app:layout_constraintTop_toBottomOf="@+id/tv_SelectCatergory" />
+
+    <TextView
+        android:id="@+id/tv_ExpenseName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Enter Expense Name"
+        android:textColor="@color/Text"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_Form"
+        app:layout_constraintHorizontal_bias="0.412"
+        app:layout_constraintStart_toStartOf="@+id/img_Form"
+        app:layout_constraintTop_toBottomOf="@+id/spinner_Catergory" />
+
+    <EditText
+        android:id="@+id/pt_Enter"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/stn_inputName"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_Form"
+        app:layout_constraintStart_toStartOf="@+id/img_Form"
+        app:layout_constraintTop_toBottomOf="@+id/tv_ExpenseName" />
+
+    <TextView
+        android:id="@+id/tv_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/stn_EnterAmount"
+        android:textColor="@color/Text"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toTopOf="@+id/pt_Amount"
+        app:layout_constraintEnd_toEndOf="@+id/img_Form"
+        app:layout_constraintHorizontal_bias="0.484"
+        app:layout_constraintStart_toStartOf="@+id/img_Form"
+        app:layout_constraintTop_toBottomOf="@+id/pt_Enter"
+        app:layout_constraintVertical_bias="0.461" />
+
+    <EditText
+        android:id="@+id/pt_Amount"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginTop="16dp"
+        android:ems="10"
+        android:hint="@string/stn_InputAmount"
+        android:inputType="textPersonName"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@+id/img_Form"
+        app:layout_constraintStart_toStartOf="@+id/img_Form"
+        app:layout_constraintTop_toBottomOf="@+id/tv_Amount" />
+
+    <Button
+        android:id="@+id/btn_AddExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:backgroundTint="@color/Color3"
+        android:text="@string/stn_btnAdd"
+        app:layout_constraintBottom_toBottomOf="@+id/img_Form"
+        app:layout_constraintEnd_toEndOf="@+id/img_Form"
+        app:layout_constraintStart_toStartOf="@+id/img_Form"
+        app:layout_constraintTop_toBottomOf="@+id/pt_Amount"
+        app:layout_constraintVertical_bias="0.019" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="200dp"
+        android:layout_height="75dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img_Form"
+        app:layout_constraintVertical_bias="0.279"
+        app:srcCompat="@drawable/expense" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

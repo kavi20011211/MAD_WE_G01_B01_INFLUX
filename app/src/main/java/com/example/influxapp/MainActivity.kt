@@ -3,55 +3,45 @@ package com.example.influxapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.text.TextUtils
 import android.widget.Button
-import android.widget.EditText
-import android.widget.Toast
-import com.example.influxapp.database.DataBaseHelper
 
 class MainActivity : AppCompatActivity() {
-
-    private lateinit var etUsername:EditText
-    private lateinit var etPassword:EditText
-    private lateinit var database:DataBaseHelper
+    private lateinit var addBtn:Button
+    private lateinit var updateBtn:Button
+    private lateinit var graphBtn:Button
+    private lateinit var listBtn:Button
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        val registerButton = findViewById<Button>(R.id.RegisterBtn)
-        val loginButton = findViewById<Button>(R.id.LogBtn)
-        etUsername = findViewById<EditText>(R.id.editTextTextPersonName)
-        etPassword = findViewById<EditText>(R.id.editTextTextPassword)
-        database = DataBaseHelper(this)
+        addBtn=findViewById(R.id.btn_Add)
+        updateBtn = findViewById(R.id.btn_Edit)
+        graphBtn = findViewById(R.id.btn_Graph)
+        listBtn = findViewById(R.id.btn_List)
 
-        registerButton.setOnClickListener{
-            val intent = Intent(this,RegisterActivity::class.java)
+        addBtn.setOnClickListener {
+            val intent = Intent(this,AddExpense::class.java)
             startActivity(intent)
             finish()
         }
 
-
-        loginButton.setOnClickListener {
-            val usernameEditText = etUsername.text.toString()
-            val passwordEditText = etPassword.text.toString()
-            val result = database.userValidationFunction(usernameEditText,passwordEditText)
-
-//            Toast.makeText(this@MainActivity,"Hello!",Toast.LENGTH_SHORT).show()
-
-
-            if(TextUtils.isEmpty(usernameEditText)||TextUtils.isEmpty(passwordEditText)){
-                Toast.makeText(this@MainActivity,"Enter your username and password!",Toast.LENGTH_SHORT).show()
-            }else {
-
-                if (result == true){
-                    Toast.makeText(this@MainActivity, "Successful!", Toast.LENGTH_SHORT).show()
-                    val intent = Intent(this,AchievmentActivity::class.java)
-                    startActivity(intent)
-                    finish()
-                }else {
-                    Toast.makeText(this@MainActivity, "Something Went Wrong!", Toast.LENGTH_SHORT).show()
-                }
-            }
+        updateBtn.setOnClickListener {
+            val intent = Intent(this,Edit::class.java)
+            startActivity(intent)
+            finish()
         }
+
+        graphBtn.setOnClickListener {
+            val intent = Intent(this,GraphicalDashboard::class.java)
+            startActivity(intent)
+            finish()
+        }
+
+        listBtn.setOnClickListener {
+            val intent = Intent(this,MainActivity::class.java)
+            startActivity(intent)
+            finish()
+        }
+
     }
 }

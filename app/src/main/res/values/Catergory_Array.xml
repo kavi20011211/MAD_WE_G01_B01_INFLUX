@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="Catergory_array">
+        <item>Select Catergory</item>
+        <item>Grocery</item>
+        <item>Shopping</item>
+        <item>Medical</item>
+        <item>Insurance</item>
+    </string-array>
+</resources>

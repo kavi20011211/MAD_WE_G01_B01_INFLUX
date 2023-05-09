@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <color name="Background_color">#E0EFDE</color>
     <color name="Color1">#B3F2DD</color>
     <color name="Text_Color">#2D3A3A</color>
@@ -13,4 +14,5 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+    <color name="colorGreen">#FF8484</color>
 </resources>

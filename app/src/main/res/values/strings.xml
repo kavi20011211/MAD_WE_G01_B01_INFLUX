@@ -1,4 +1,52 @@
 <resources>
+
+    <string name="string_welcome">Welcome back to Influx</string>
+    <string name="string_Delete">Delete Income Details</string>
+    <string name="string_incomeover">Income Over View</string>
+    <string name="string_edit">My Details</string>
+    <string name="string_add">Add</string>
+    <string name="string_addincome">Add Income</string>
+    <string name="string_catergory">Select Catergory</string>
+    <string name="string_nam2">Enter Income Name</string>
+    <string name="string_greeting">Hello Amanda !</string>
+    <string name="string_totalincome">My Total Income</string>
+    <string name="string_total1">Rs. 50,000/=</string>
+    <string name="string_viewbutton">View Details</string>
+    <string name="string_incomedetail">Income Details</string>
+    <string name="string_earned">Earned Income</string>
+    <string name="string_interest">Interest Income</string>
+    <string name="string_rental">Rental Income</string>
+    <string name="string_dividend">Dividend Income</string>
+    <string name="string_editbutton">Edit</string>
+    <string name="string_editandupdate"><![CDATA[Edit & Delete]]></string>
+    <string name="string_editincome">Edit Income</string>
+    <string name="string_incometype">Income Type:</string>
+    <string name="string_salary">Income Money:</string>
+    <string name="string_deleteincome">Delete Income</string>
+    <string name="string_incometype2">Income Type:</string>
+    <string name="string_deletedetail">Delete Details</string>
+    <string name="string_savedetail">Save Details</string>
+    <string name="string_editButton2">Edit Details</string>
+    <string name="string_select">Select Income Type:</string>
+    <string name="string_catergory2">Select Catergory:</string>
+    <string name="string_addbutton2">Add</string>
+    <string name="string_next">Next</string>
+    <string name="string_amount">Enter New Amount:</string>
+    <string name="navigatebtn">Navigate</string>
+    <string name="button_description">his is a TextView element that displays</string>
+    <string name="enterCategory">Enter Category</string>
+    <string name="amount">Amount :</string>
+    <string name="Cancel">Cancel</string>
+    <string name="category">Catergory :</string>
+    <string name="type">Income Type :</string>
+    <string name="cate">Catergory</string>
+    <string name="delete">Delete</string>
+    <string name="edit">Edit</string>
+    <string name="submit">Submit</string>
+    <string name="aincome">Additonal</string>
+    <string name="profit">Sale</string>
+    <string name="rs">50000</string>
+    <string name="readIncome">Read Income</string>
     <string name="app_name">Influx</string>
     <string name="Faq_description">We built this application for your busy life solution. You are capable of
 manage your monthly income in a good manner. Save more and live happily.</string>
